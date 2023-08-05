@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+  }
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5%;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 
+        20px 30px 10px 10px rgba(0, 0, 0, 0.16),
+        -20px 30px 10px 10px rgba(0, 0, 0, 0.16)
+  }
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: 0px;
+    align-self: center;
+  }
+.image-container:hover .overlay {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.image-container {
+    position: relative;
+    border-radius: 5%;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay svg {
+    width: 50px;
+    height: 50px;
+}
+h3 {
+    color: hsl(0, 0%, 100%);
+    margin: 20px 0px 20px 0px;
+    font-weight: 600;
+    font-size: 20px;
+}
+h3:hover {
+    color: cyan;
+    cursor: pointer;
+}
+.info {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+.eth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.amount {
+    color: hsl(178, 100%, 50%);
+    margin-top: 3px;
+    font-weight: 400;
+}
+.container2 {
+    display: flex;
+    align-items: center;
+}
+.time {
+    color: hsl(215, 51%, 70%);
+    margin-top: 3px;
+}
+svg {
+    margin: 0 5px;
+}
+hr {
+    margin: 20px 0 10px 0;
+    width: 100%;
+    border: 1px solid hsl(215, 32%, 27%);  
+  }
+.creation {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}  
+.creation > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.creation > p {
+    color: hsl(215, 51%, 70%);  
+}
+.creation span {
+    color: white;
+}
+.creation span:hover {
+    color: cyan;
+    cursor: pointer;
+}
+footer {
+    margin: 30px;
+}
+@media (max-width: 375px) {
+    .card {
+        width: 250px;
+    }
+    .image-container img {
+        width: 250px;
+        height: 250px;
+      }
+      .info {
+        font-size: 15px;
+    }
+}
